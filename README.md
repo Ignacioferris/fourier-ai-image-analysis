@@ -23,19 +23,17 @@ For this first test I used two visually similar images: one real photograph and 
 
 ## Results
 
-In the images I tested, I found a clear visual difference between the Fourier spectra.
+After applying the 2D Fourier transform, a clear visual difference appears between both spectra.
 
-The real image produces a relatively homogeneous spectrum, while the AI-generated image shows more visible horizontal and vertical structures.
+The real image produces a relatively homogeneous spectrum, while the AI-generated image shows more pronounced horizontal and vertical structures.
 
-### Real image
+| Fourier spectrum - Real | Fourier spectrum - AI |
+|---|---|
+| ![Fourier spectrum - Real](results/fourier_real_01.png) | ![Fourier spectrum - AI](results/fourier_ai_01.png) |
 
-![Fourier spectrum of a real image](results/fourier_real_01.png)
+These patterns may be related to artifacts introduced during the image generation process.
 
-### AI-generated image
-
-![Fourier spectrum of an AI-generated image](results/fourier_ai_01.png)
-
-These patterns could be related to artifacts introduced during the image generation process. More images would need to be tested before drawing any general conclusions.
+More images would need to be tested before drawing any general conclusions.
 
 ## Technologies
 
