@@ -13,6 +13,14 @@ The process is simple:
 3. Compute the 2D Fourier transform.
 4. Center the frequencies and visualize the magnitude spectrum using a logarithmic scale.
 
+## Images used
+
+For this first test I used two visually similar images: one real photograph and one AI-generated image.
+
+| Real image | AI-generated image |
+|---|---|
+| ![Real image](images/imagen_1.png) | ![AI-generated image](images/imagenIA_1.png) |
+
 ## Results
 
 In the images I tested, I found a clear visual difference between the Fourier spectra.
