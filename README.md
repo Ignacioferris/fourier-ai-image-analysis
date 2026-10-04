@@ -1,40 +1,33 @@
-# Fourier Analysis of AI-Generated Images
+# Fourier AI Image Analysis
 
-A small project exploring differences between real and AI-generated images using the Fourier transform.
+Small project I worked on during the summer to explore differences between real and AI-generated images using the Fourier transform.
 
 ## Idea
 
-Instead of analysing the images directly in the spatial domain, I compare their frequency spectra using a 2D Fourier transform.
+The idea was to look at images in the frequency domain instead of comparing them directly at pixel level.
 
 The process is simple:
 
 1. Convert the image to grayscale.
 2. Store it as a NumPy matrix.
-3. Compute its 2D Fourier transform.
-4. Shift the zero frequency to the centre.
-5. Visualize the magnitude spectrum using a logarithmic scale.
+3. Compute the 2D Fourier transform.
+4. Center the frequencies and visualize the magnitude spectrum using a logarithmic scale.
 
 ## Results
 
-In the images tested so far, I found a noticeable difference between real and AI-generated images.
+In the images I tested, I found a clear visual difference between the Fourier spectra.
 
-Real photographs tend to produce a more homogeneous frequency spectrum, while some AI-generated images show visible bands and structured patterns in their Fourier transform.
-
-These results are experimental and do not represent a general-purpose AI image detector.
-
-## Example
+The real image produces a relatively homogeneous spectrum, while the AI-generated image shows more visible horizontal and vertical structures.
 
 ### Real image
 
-![Real image](images/real.png)
+![Fourier spectrum of a real image](results/fourier_real_01.png)
 
 ### AI-generated image
 
-![AI-generated image](images/ai.png)
+![Fourier spectrum of an AI-generated image](results/fourier_ai_01.png)
 
-### Fourier spectra
-
-![Fourier comparison](results/fourier_comparison.png)
+These patterns could be related to artifacts introduced during the image generation process. More images would need to be tested before drawing any general conclusions.
 
 ## Technologies
 
@@ -43,6 +36,14 @@ These results are experimental and do not represent a general-purpose AI image d
 - Pillow
 - Matplotlib
 
-## Current status
+## Project structure
 
-This is a small experimental project. The next step is to test the behaviour on a larger set of images and try to quantify the patterns found in the frequency domain.
+```text
+src/
+    image_to_matrix.py
+    fourier_analysis.py
+    rotate_image.py
+
+results/
+    fourier_real_01.png
+    fourier_ai_01.png
