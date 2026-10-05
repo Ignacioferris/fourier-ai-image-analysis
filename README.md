@@ -1,6 +1,6 @@
 # Fourier AI Image Analysis
 
-Small project I worked on during the summer to explore differences between real and AI-generated images using the Fourier transform.
+Small project I worked on to explore differences between real and AI-generated images using the Fourier transform.
 
 ## Idea
 
